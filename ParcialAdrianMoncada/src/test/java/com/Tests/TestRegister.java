@@ -17,7 +17,6 @@ public class TestRegister {
 		pageregister = new PageRegister(driver);
 		driver = pageregister.chromeDriverConnection();
 		pageregister.link("https://opencart.abstracta.us/index.php?route=common/home");
-		
 	}
 	
 	

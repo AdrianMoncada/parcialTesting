@@ -44,7 +44,7 @@ public class BasePage {
 	}
 	public void comparar (By locator, String texto) {
 		String res = driver.findElement(locator).getText();
-		assertTrue(res.contains(texto));
+		assert(res.contains(texto));
 	}
 	public void waitForTextToBePresent(By locator, String texto, int tiempo) {
 		new WebDriverWait(driver,Duration.ofSeconds(tiempo))
